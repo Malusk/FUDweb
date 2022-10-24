@@ -1,52 +1,56 @@
-<!-- Define que el documento esta bajo el estandar de HTML 5 -->
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="./styles/style.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module" src = "/Fud.js"></script>
+    <script type="module" src = "/main.js"></script>
+    <div>
 
-<!-- Representa la raíz de un documento HTML o XHTML. Todos los demás elementos deben ser descendientes de este elemento. -->
-<html lang="es">
-    
-    <head>
-        
-        <meta charset="utf-8">
-        
-        <title> Formulario de Acceso </title>    
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <meta name="author" content="Videojuegos & Desarrollo">
-        <meta name="description" content="Muestra de un formulario de acceso en HTML y CSS">
-        <meta name="keywords" content="Formulario Acceso, Formulario de LogIn">
-        
-        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
-        
-        <!-- Link hacia el archivo de estilos css -->
-        <link rel="stylesheet" href="login.css">
-        
-        <style type="text/css">
-            
-        </style>
-        
-        <script type="text/javascript">
-        
-        </script>
-        
-    </head>
-    
-    <body>
-        
-        <div id="contenedor">
-            <div id="central">
-                <div id="login">
-                    <form id="Formulario" action = "fud.html">
-                        <input type="text" name="RFC" placeholder="RFC" required>
-                        
-                        <input type="password" placeholder="Contraseña" name="password" required>
-                        
-                        <button type="submit" title="Ingresar" name="Ingresar">Ingresar</button>
-                    </form>
-                </div>
+    </div>
+    <div id="pantalla-dividida">
+        <div class="izquierda">
+            <div align="middle">
+                <label for="">
+                    Bienvenido
+                </label>
             </div>
+          
+          <div align="middle">
+              <div >
+                  <img src="./assets/avatar.png" alt="" width="50" height="50" align="top">
+              </div>
+              <div padding-left>
+                  <div>
+                      <label for="">Nombre del Funcionario:</label>
+                  </div>
+                  <div>
+                      <label for="">RFC</label>
+                  </div>
+              </div>
+          </div>
         </div>
-            
-    </body>
+        <div class="derecha" align="centermidd">
+          <form action="" align="right">
+              <label for="form.curp" align="center">CURP</label>
+              <input type="text" id="form.curp" name="form.curp" placeholder="CURP">
+              <button><a href="pagina.html"><script>
+                const content = element.innerHTML;
+                element.innerHTML = htmlString;
+                </script>
+                Buscar</a></button>
+              
+              <button > <a href="nuevoRegistro.html"> + Agregar </a></button>
+              
+          </form>
+        </div>  
+      </div>
+    
+</body>
 </html>

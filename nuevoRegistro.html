@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="./styles/style.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module" src = "/Fud.js"></script>
+    <script type="module" src = "/main.js"></script>
+    <div id="pantalla-dividida">
+        <div class="izquierda">
+          <label for="" align="center">
+              Bienvenido
+          </label>
+          <div>
+              <div>
+                  <img src="./assets/avatar.png" alt="" width="50" height="50">
+              </div>
+              <div padding-left>
+                  <div>
+                      <label for="">Nombre del Funcionario:</label>
+                  </div>
+                  <div>
+                      <label for="">RFC</label>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="derecha">
+              <div>
+                  <label>Descargar Formato Unico de Declaracion (FUD)</label>
+                  <button><a href="./assets/FUD 2017 rellenable.pdf" download="FUD 2017 rellenable.pdf">Descargar</a></button>
+              </div>
+              <div>
+                    <label for="">Subir formato Unico de Declaracion (FUD) llenado</label>
+                    <input type="text" id="form.pdfName" placeholder="CURP">
+                    <input type="file" id="form.selectFile" name="form.selectfile" placeholder="Seleccionar Archivo" multiple>
+                    <!--<button><script>
+                        var newPdfName=document.getElementById("form.pdfName");
+                        var docToUp=document.getElementById("form.selectFile");
+                        Object.defineProperty(docToUp,'name',{
+                            writable:false,
+                            value:newPdfName
+                        })
+                        console.log('DOCUMENTO A SUBIR ' + docToUp.value);
+                    </script>update info</button>-->
+                    
+                    <input type="button" onclick = "wao1()" value="Subir">
+              </div>
+        </div>  
+      </div>
+    
+</body>
+</html>
